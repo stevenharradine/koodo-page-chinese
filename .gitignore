@@ -1,0 +1,5 @@
+backup-sheldon-code
+node_modules
+.DS_Store
+*.lnk
+*.map

@@ -1,0 +1,151 @@
+@import "standard-resources";
+
+// overarching container element
+.km-chinese {
+	display: block; // required for IE 11 to properly use padding-bottom
+	@extend .stag-sans-semibold-web;
+
+	* { box-sizing: border-box; }
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	p { margin: 0; }
+}
+
+// override production defaults
+div#site-wrapper.page-content {
+	background-color: $kTiffanyBlue;
+
+	div#site-container { // remove unwanted padding
+		padding: 0;
+		padding-left: 0;
+	}
+
+	div#site-content { margin: 0; } // remove unwanted margin
+}
+
+div.link-wrapper, // small triangle bullet
+div#content-bottom-info { // empty HTML element
+	display: none;
+}
+
+// sect#1 - Chinese New Years promotional banner
+.cny-banner {
+	padding: 15px;
+	background-color: $kTangerine;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	figure { margin: 0; }
+
+	.short-copy-img { width: 50%; }
+
+	.phone-img { width: 20%; }
+
+	.long-copy-img {
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
+// sect#2 - Koodo marketing copy
+.koodo-info {
+	padding: 70px 0 40px 0;
+	background-color: $kLightLime;
+
+	img { margin: 0 auto; }
+
+	img:nth-of-type(1) { width: 85%; }
+
+	img:nth-of-type(2) {
+		width: 65%;
+		padding: 50px 0;
+	}
+
+	img:nth-of-type(3) { width: 70%; }
+}
+
+// sect#3 - .store-locations container
+	// colour themes for div.store-location blocks
+		.theme-blue {
+			background-color: $kBlueberry;
+			color: $kDarkBlue;
+			.telephone { color: $kDarkBlue; }
+		}
+
+		.theme-pink-green {
+			background-color: $kRaspberry;
+			color: $kLightLime;
+			.telephone { color: $kLightLime; }
+		}
+
+		.theme-orange-pink {
+			background-color: $kLightTangerine;
+			color: $kRaspberry;
+			.telephone { color: $kRaspberry; }
+		}
+
+		.theme-green-pink {
+			background-color: $kLightLime;
+			color: $kRaspberry;
+			.telephone { color: $kRaspberry; }
+		}
+
+	// .store-location blocks
+	.store-location {
+		padding: 45px 20px;
+		text-align: center;
+
+		// add margin-bottom after each child element of div.store-location
+		> * { margin: 0 auto 30px auto; }
+		
+		.chinese-address {
+			max-width: 150px;
+			margin: 0 auto 30px auto;
+		}
+		
+		// remove margin-bottom after a.telephone and p.telephone
+		.telephone { margin-bottom: 0; }
+	}
+		
+		.address { font-size: 16px; }
+
+		.city-province, a.telephone { display: block; }
+
+		.telephone { font-size: 18px; }
+
+		p.telephone { display: none; } // on mobile, hide <p> element by default
+
+		// Chinese "find us" CTA link
+		.cta-find-us {
+			max-width: 280px;
+			padding: 10px 0;
+			background-color: $kDarkBlue;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+
+			&:focus, &:hover {
+				background-color: $kDarkBlueHover;
+				color: white;
+			}
+
+			&:focus { outline: 2px solid $kActiveGrey; }
+
+			img { max-height: 20px; } // Chinese "find us" characters
+
+			span { // kooding glyph (chevron pointing right)
+				margin-left: 10px;
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+
+@import "media-query";
