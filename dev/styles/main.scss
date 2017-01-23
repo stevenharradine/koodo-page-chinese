@@ -16,6 +16,15 @@
 }
 
 // override production defaults
+.page-node-690 #pri-nav-cont .menu-level-1 ul.menu li.li-support > div:after,
+.page-node-691 #pri-nav-cont .menu-level-1 ul.menu li.li-soutien > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.li-shop > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.li-magasiner > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.dropdown-expanded > div:after,
+#pri-nav-cont .menu-level-1 ul.menu  li.expanded > div:hover:after {
+	content: ""; // remove triangle indicator from below "Shop" menu item
+}
+
 div#site-wrapper.page-content {
 	background-color: $kTiffanyBlue;
 
