@@ -1,4 +1,4 @@
-# Chinese Dealers
+# Chinese Speaking Stores
 
 https://koodomobile.com/chinese
 
