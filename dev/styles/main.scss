@@ -41,27 +41,6 @@ div#content-bottom-info { // empty HTML element
 	display: none;
 }
 
-// sect#0 - Chinese New Years promotional banner
-.cny-banner {
-	padding: 15px;
-	background-color: $kTangerine;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-
-	figure { margin: 0; }
-
-	.short-copy-img { width: 50%; }
-
-	.phone-img { width: 20%; }
-
-	.long-copy-img {
-		width: 100%;
-		margin-top: 15px;
-	}
-}
-
 // sect#1 - Koodo marketing copy
 .koodo-info {
 	padding: 70px 0 40px 0;
