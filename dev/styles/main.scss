@@ -41,7 +41,7 @@ div#content-bottom-info { // empty HTML element
 	display: none;
 }
 
-// sect#1 - Chinese New Years promotional banner
+// sect#0 - Chinese New Years promotional banner
 .cny-banner {
 	padding: 15px;
 	background-color: $kTangerine;
@@ -62,7 +62,7 @@ div#content-bottom-info { // empty HTML element
 	}
 }
 
-// sect#2 - Koodo marketing copy
+// sect#1 - Koodo marketing copy
 .koodo-info {
 	padding: 70px 0 40px 0;
 	background-color: $kLightLime;
@@ -79,7 +79,7 @@ div#content-bottom-info { // empty HTML element
 	img:nth-of-type(3) { width: 70%; }
 }
 
-// sect#3 - .store-locations container
+// sect#2 - .store-locations container
 	// colour themes for div.store-location blocks
 		.theme-blue {
 			background-color: $kBlueberry;

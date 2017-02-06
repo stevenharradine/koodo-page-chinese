@@ -22,7 +22,7 @@
 
 // tablet view
 @media screen and (min-width: 768px) {
-	// sect#1 - Chinese New Years promotional banner
+	// sect#0 - Chinese New Years promotional banner
 	.cny-banner {
 		padding: 0 40px;
 		justify-content: space-between; // side-by-side layout
@@ -37,7 +37,7 @@
 		}
 	}
 
-	// sect#2 - Koodo marketing copy
+	// sect#1 - Koodo marketing copy
 	.koodo-info {
 		padding: 70px 0 50px 0;
 
@@ -51,7 +51,7 @@
 		img:nth-of-type(3) { width: 30%; }
 	}
 
-	// sect#3 - .store-locations container
+	// sect#2 - .store-locations container
 	.store-locations { // side-by-side layout
 		display: flex;
 		flex-wrap: wrap;
@@ -84,7 +84,7 @@
 
 // desktop view
 @media screen and (min-width: 1100px) {
-	// sect#1 - Chinese New Years promotional banner
+	// sect#0 - Chinese New Years promotional banner
 	.cny-banner {
 		padding: 0;
 		justify-content: space-between;
@@ -107,7 +107,7 @@
 
 	}
 
-	// sect#2 - Koodo marketing copy
+	// sect#1 - Koodo marketing copy
 	.koodo-info {
 		padding: 90px 0 55px 0;
 
@@ -121,7 +121,7 @@
 		img:nth-of-type(3) { max-width: 340px; }
 	}
 
-	// sect#3 - .store-locations container
+	// sect#2 - .store-locations container
 	.store-location {
 		.chinese-address { max-width: 190px; }
 	}
