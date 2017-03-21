@@ -1,25 +1,35 @@
-//- HTML character codes:
-	//- thin chevron pointing right - &#57345;
+//- filepath: /sites/default/files/uploads/TBreplaced-project-name/filename.filetype
 
 doctype html
 html(lang="en")
 	head
 		title km.com/chinese
-		link(rel="stylesheet" href="font-stag-sans-web/stylesheet.css")
-		link(rel="stylesheet" href="font-koodings/stylesheet.css")
+		// START of local webserver CSS resources
+		link(rel="icon", type="image/png", href="http://localhost:4000/public/icons/koodo-blueberry-favicon-196-196.png")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-stag-sans-web/stag-sans-web.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/font-kooding-glyphs/kooding-glyphs.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/page-title-helper.css")
+		link(rel="stylesheet" href="http://localhost:4000/public/styles/window-dimensions-helper.css")
+		// END of local webserver CSS resources
 		link(rel="stylesheet" href="styles/main.css")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-	body(style="margin: 0;") <!-- for localhost -->
-		div#site-wrapper.page-content <!-- for production -->
-			h2(style="max-width: 1160px; padding: 20px 0; margin: 0 auto; font-family: 'Stag Sans Web'; font-size: 21px; font-weight: 700;") Chinese Speaking Stores
-			div#site-container(style="max-width: 1160px; margin: 0 auto;") <!-- for production -->
-				div#site-content <!-- for production -->
-					div.content <!-- for production -->
+		style.
+			/* project-specific local-only styles go here */
+			body { margin: 0; }
+
+			#site-container { max-width: 1160px; margin: 0 auto; }
+	body
+		div#site-wrapper.page-content <!-- markup to mirror production page structure -->
+			div#ptHelper <!-- markup to mirror production page structure -->
+				h2 Chinese Speaking Stores
+			div#site-container <!-- markup to mirror production page structure -->
+				div#site-content <!-- markup to mirror production page structure -->
+					div.content <!-- markup to mirror production page structure -->
 						main.km-chinese(role="main")
 							//- sect#1 - Koodo marketing copy
 							section.koodo-info
-								img(src="/sites/default/files/uploads/chinese/hero-image-1-4g-lte.png", alt="Largest 4G LTE network in Canada at cheap montly prices")
+								img(src="/sites/default/files/uploads/chinese/hero-image-1-4g-lte.png", alt="Largest 4G LTE network in Canada at cheap monthly prices")
 								img(src="/sites/default/files/uploads/chinese/hero-image-2-koodo-large.png", alt="Choose Happy at Koodo")
 								img(src="/sites/default/files/uploads/chinese/hero-image-3-koodo-small.png", alt="Please come to the Koodo Chinese Dealer stores listed below and ask for service")
 							//- sect#2 - store locations container
@@ -31,7 +41,7 @@ html(lang="en")
 										figcaption.address 222 Spadina Ave Unit 142 #[span.city-province Toronto, ON]
 									a.cta-find-us(href="https://www.google.ca/maps/place/Koodo+Mobile+-+Chinatown+Centre+%E6%96%87%E8%8F%AF%E4%B8%AD%E5%BF%83/@43.6517498,-79.3971725,17z/data=!4m8!1m2!2m1!1skoodo!3m4!1s0x0:0xe09826d8c1ddf17e!8m2!3d43.6510168!4d-79.3980116", target="_blank")
 										img(src="/sites/default/files/uploads/chinese/cta-find-us.png", alt="Find us")
-										span.koodo-glyphs-regular &#57345;
+										span.kooding-glyph.thin-chevron-right
 									a.telephone(href="tel:647-856-3333") 647-856-3333
 									p.telephone 647-856-3333
 
@@ -41,7 +51,7 @@ html(lang="en")
 										figcaption.address 4300 Steeles Ave East Unit 13A/B #[span.city-province Markham, ON]
 									a.cta-find-us(href="https://www.google.ca/maps/place/Koodo+Mobile+-+Pacific+Mall+%E5%A4%AA%E5%8F%A4%E5%BB%A3%E5%A0%B4/@43.8255956,-79.3058193,17z/data=!4m8!1m2!2m1!1skoodo!3m4!1s0x0:0xc3a93a740f01d1b3!8m2!3d43.8260673!4d-79.3061983", target="_blank")
 										img(src="/sites/default/files/uploads/chinese/cta-find-us.png", alt="Find us")
-										span.koodo-glyphs-regular &#57345;
+										span.kooding-glyph.thin-chevron-right
 									a.telephone(href="tel:647-856-5555") 647-856-5555
 									p.telephone 647-856-5555
 
@@ -51,7 +61,7 @@ html(lang="en")
 										figcaption.address 1571 Sandhurst Circle Unit 426 #[span.city-province Scarborough, ON]
 									a.cta-find-us(href="https://www.google.ca/maps/place/Koodo+Mobile+@+Woodside+Square+(Scarborough)/@43.809914,-79.2714507,17z/data=!3m1!4b1!4m5!3m4!1s0x4057361d588256d3:0x3217cc6851670ae1!8m2!3d43.809914!4d-79.269262", target="_blank")
 										img(src="/sites/default/files/uploads/chinese/cta-find-us.png", alt="Find us")
-										span.koodo-glyphs-regular &#57345;
+										span.kooding-glyph.thin-chevron-right
 									a.telephone(href="tel:647-345-3570") 647-345-3570
 									p.telephone 647-345-3570
 
@@ -61,7 +71,7 @@ html(lang="en")
 										figcaption.address 3255 Highway 7 East #[span.city-province Markham, ON]
 									a.cta-find-us(href="https://www.google.ca/maps/place/Koodo+Mobile+-+First+Markham+Place/@43.849861,-79.347604,15z/data=!4m5!3m4!1s0x0:0xcffedaaee6d9f153!8m2!3d43.849861!4d-79.347604?sa=X&ved=0ahUKEwin0-CblPvPAhVh7oMKHR8MBNkQ_BIIcDAK", target="_blank")
 										img(src="/sites/default/files/uploads/chinese/cta-find-us.png", alt="Find us")
-										span.koodo-glyphs-regular &#57345;
+										span.kooding-glyph.thin-chevron-right
 									a.telephone(href="tel:647-331-6888") 647-331-6888
 									p.telephone 647-331-6888
 
@@ -71,10 +81,18 @@ html(lang="en")
 										figcaption.address 2739 Eglinton Ave East #[span.city-province Scarborough, ON]
 									a.cta-find-us(href="https://www.google.ca/maps/place/Koodo+Mobile+-+Scarborough+%E5%A3%AB%E5%98%89%E5%A0%A1%E5%88%86%E5%BA%97/@43.7348054,-79.2500124,16.5z/data=!4m12!1m6!3m5!1s0x89d4ce2b8749f041:0x15a7cf36987299ca!2zS29vZG8gTW9iaWxlIC0gU2NhcmJvcm91Z2gg5aOr5ZiJ5aCh5YiG5bqX!8m2!3d43.7362414!4d-79.2482691!3m4!1s0x89d4ce2b8749f041:0x15a7cf36987299ca!8m2!3d43.7362414!4d-79.2482691", target="_blank")
 										img(src="/sites/default/files/uploads/chinese/cta-find-us.png", alt="Find us")
-										span.koodo-glyphs-regular &#57345;
+										span.kooding-glyph.thin-chevron-right
 									a.telephone(href="tel:647-764-9999") 647-764-9999
 									p.telephone 647-764-9999
 						<!-- /.km-chinese -->
-				div#content-bottom-info <!-- for production -->
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+					<!-- /.content -->
+				<!-- /#site-content -->
+			<!-- /#site-container -->
+		<!-- /#site-wrapper.page-content -->
+		// START of local webserver JS resources
+		//- page-title-helper.js adds "View French" and "View English" links to page
+		//- script removed b/c this page is bilingual (i.e. EN and FR code is the same)
+		//- script(src="http://localhost:4000/public/scripts/page-title-helper.js")
+		script(src="http://localhost:4000/public/scripts/window-dimensions-helper.js")
+		// END of local webserver JS resources
 		script(src="scripts/main.js")
