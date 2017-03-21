@@ -1,0 +1,30 @@
+// common style overrides of production defaults
+
+remove triangle indicator from below "Shop" menu item
+.page-node-690 #pri-nav-cont .menu-level-1 ul.menu li.li-support > div:after,
+.page-node-691 #pri-nav-cont .menu-level-1 ul.menu li.li-soutien > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.li-shop > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.li-magasiner > div:after,
+#pri-nav-cont .menu-level-1 ul.menu li.dropdown-expanded > div:after,
+#pri-nav-cont .menu-level-1 ul.menu  li.expanded > div:hover:after {
+	content: "";
+}
+
+div#site-wrapper.page-content {
+	background-color: $kTiffanyBlue;
+
+	// remove unwanted padding (this enables full-width elements; use .inner-container to contain text)
+	div#site-container {
+		padding: 0;
+		padding-left: 0;
+	}
+
+	// remove unwanted margin-top and margin-bottom
+	div#site-content { margin: 0; }
+}
+
+// near the bottom of the page, remove the following elements
+div.link-wrapper, // small triangle bullet
+div#content-bottom-info { // empty HTML element
+	display: none;
+}

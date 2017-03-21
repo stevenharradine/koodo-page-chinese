@@ -1,0 +1,19 @@
+// standardized font classes
+// access with @extend .font-class-name
+.stag-sans-semibold-web {
+	font-family: "Stag Sans Web";
+	font-stretch: normal;
+	font-style: normal;
+}
+
+.stag-sans-semibold-web { font-weight: 600; }
+
+.kooding-glyph {
+	// "koodo_glyphsregular" for localhost, "koodings" for production
+	font-family: "koodo_glyphsregular", "koodings";
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: normal;
+
+	&.thin-chevron-right:before { content: "\E001"; } // &#57345;
+}

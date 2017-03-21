@@ -1,0 +1,16 @@
+// standard styling for main parent element and its child elements
+.km-chinese {
+	display: block; // required for IE 11 to properly use padding-bottom
+	@extend .stag-sans-semibold-web;
+	font-size: 16px; // minimum font-size
+	line-height: 1;
+
+	* { box-sizing: border-box; }
+
+	img {
+		max-width: 100%;
+		display: block;
+	}
+
+	p { margin: 0; }
+}
